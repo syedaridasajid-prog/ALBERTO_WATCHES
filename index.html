@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Alberto Watch Company | Luxury Timepieces</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Jost:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="130">
+
+<!-- ================= TOP BAR: LOGO + VISITOR COUNTER ================= -->
+<div class="fixed-top">
+  <div class="top-bar py-2">
+    <div class="container d-flex justify-content-between align-items-center">
+      <a href="#home" class="logo"><i class="bi bi-gem me-1"></i> ALBERTO <span class="tagline d-none d-sm-inline">WATCH COMPANY</span></a>
+      <span class="visitor-badge"><i class="bi bi-people-fill me-1"></i> Visitors: <span id="visitorCountNav">1251</span></span>
+    </div>
+  </div>
+
+  <!-- ================= NAVIGATION MENU ================= -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-alberto" id="mainNav">
+    <div class="container">
+      <button class="navbar-toggler ms-auto" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#products" data-bs-toggle="dropdown">Products</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item dropdown-filter" data-filter="all" href="#products">All Watches</a></li>
+              <li><a class="dropdown-item dropdown-filter" data-filter="vintage" href="#products">Vintage Watches</a></li>
+              <li><a class="dropdown-item dropdown-filter" data-filter="luxury" href="#products">Luxury Watches</a></li>
+              <li><a class="dropdown-item dropdown-filter" data-filter="smart" href="#products">Smart Watches</a></li>
+              <li><a class="dropdown-item dropdown-filter" data-filter="classic" href="#products">Classic Watches</a></li>
+              <li><a class="dropdown-item dropdown-filter" data-filter="mens" href="#products">Men's Watches</a></li>
+              <li><a class="dropdown-item dropdown-filter" data-filter="womens" href="#products">Women's Watches</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#technology">Technology</a></li>
+          <li class="nav-item"><a class="nav-link" href="#locator">Store Locator</a></li>
+          <li class="nav-item"><a class="nav-link" href="#support">Support</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sitemap">Site Map</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<!-- ================= HOME / HERO CAROUSEL ================= -->
+<section id="home">
+  <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+      <button data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+      <button data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="hero-slide d-flex align-items-center" style="background-image:url('images/hero-1.jpg')">
+          <div class="container hero-caption p-4">
+            <h1 class="text-gold">Timeless Beauty,<br>Engineered for Excellence</h1>
+            <p class="lead mt-3">Discover the world of luxury timepieces with Alberto Watch Company.</p>
+            <a href="#products" class="btn btn-gold mt-3">Explore Products <i class="bi bi-arrow-right ms-1"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="hero-slide d-flex align-items-center" style="background-image:url('images/hero-2.jpg')">
+          <div class="container hero-caption p-4">
+            <h1 class="text-gold">Precision in<br>Every Movement</h1>
+            <p class="lead mt-3">Swiss engineering meets timeless design.</p>
+            <a href="#technology" class="btn btn-gold mt-3">Our Technology <i class="bi bi-arrow-right ms-1"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="hero-slide d-flex align-items-center" style="background-image:url('images/hero-3.jpg')">
+          <div class="container hero-caption p-4">
+            <h1 class="text-gold">A Legacy of<br>Trust &amp; Excellence</h1>
+            <p class="lead mt-3">Serving collectors and enthusiasts since 1985.</p>
+            <a href="#about" class="btn btn-gold mt-3">About Us <i class="bi bi-arrow-right ms-1"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="hero-nav-btn d-flex align-items-center justify-content-center"><i class="bi bi-chevron-left"></i></span>
+    </button>
+    <button class="carousel-control-next" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="hero-nav-btn d-flex align-items-center justify-content-center"><i class="bi bi-chevron-right"></i></span>
+    </button>
+  </div>
+</section>
+
+<!-- ================= QUICK CATEGORY NAVIGATION ================= -->
+<section class="container py-5 fade-section">
+  <div class="row g-3">
+    <div class="col-6 col-md-3"><a class="cat-card" href="#products" onclick="filterItems('luxury')"><i class="bi bi-gem d-block mb-2"></i>Luxury Watches</a></div>
+    <div class="col-6 col-md-3"><a class="cat-card" href="#products" onclick="filterItems('vintage')"><i class="bi bi-hourglass-split d-block mb-2"></i>Vintage Watches</a></div>
+    <div class="col-6 col-md-3"><a class="cat-card" href="#products" onclick="filterItems('smart')"><i class="bi bi-cpu d-block mb-2"></i>Smart Watches</a></div>
+    <div class="col-6 col-md-3"><a class="cat-card" href="#products" onclick="filterItems('classic')"><i class="bi bi-watch d-block mb-2"></i>Classic Watches</a></div>
+  </div>
+</section>
+
+<!-- ================= FEATURED WATCHES ================= -->
+<section class="container pb-5 fade-section">
+  <div class="text-center">
+    <h2 class="section-title">Featured Watches</h2>
+    <p class="section-sub">Timeless Elegance. Exceptional Quality.</p>
+    <div class="divider-gold"></div>
+  </div>
+  <div class="row g-4">
+    
+        <div class="col-xl-3 col-lg-4 col-md-6 filter-card" data-category="luxury mens">
+          <div class="card-lux">
+            <div class="card-img-wrap"><img src="images/watch-rolex.jpg" class="img-fluid" alt="Rolex Submariner"></div>
+            <div class="p-3 text-center">
+              <h6 class="serif mb-1">Rolex Submariner</h6>
+              <small class="text-muted-light">Rolex · Luxury</small>
+              <div class="price-tag my-2">$8,500</div>
+              <button class="btn btn-gold btn-sm w-100 view-details-btn" data-bs-toggle="modal" data-bs-target="#productModal"
+                data-img="images/watch-rolex.jpg" data-name="Rolex Submariner" data-brand="Rolex" data-cat="Luxury"
+                data-movement="Automatic" data-water="300m" data-material="Stainless Steel / Gold"
+                data-price="$8,500" data-desc="The Rolex Submariner is an iconic timepiece known for its precision, durability and timeless design.">View Details</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6 filter-card" data-category="luxury womens">
+          <div class="card-lux">
+            <div class="card-img-wrap"><img src="images/watch-michael-kors.jpg" class="img-fluid" alt="Michael Kors Parker"></div>
+            <div class="p-3 text-center">
+              <h6 class="serif mb-1">Michael Kors Parker</h6>
+              <small class="text-muted-light">Michael Kors · Fashion / Luxury</small>
+              <div class="price-tag my-2">$350</div>
+              <button class="btn btn-gold btn-sm w-100 view-details-btn" data-bs-toggle="modal" data-bs-target="#productModal"
+                data-img="images/watch-michael-kors.jpg" data-name="Michael Kors Parker" data-brand="Michael Kors" data-cat="Fashion / Luxury"
+                data-movement="Quartz" data-water="50m" data-material="Gold-Tone Stainless Steel"
+                data-price="$350" data-desc="A glamorous gold-tone chronograph that brings runway style to your wrist.">View Details</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6 filter-card" data-category="classic mens womens">
+          <div class="card-lux">
+            <div class="card-img-wrap"><img src="images/watch-citizen.jpg" class="img-fluid" alt="Citizen Eco-Drive"></div>
+            <div class="p-3 text-center">
+              <h6 class="serif mb-1">Citizen Eco-Drive</h6>
+              <small class="text-muted-light">Citizen · Classic</small>
+              <div class="price-tag my-2">$450</div>
+              <button class="btn btn-gold btn-sm w-100 view-details-btn" data-bs-toggle="modal" data-bs-target="#productModal"
+                data-img="images/watch-citizen.jpg" data-name="Citizen Eco-Drive" data-brand="Citizen" data-cat="Classic"
+                data-movement="Eco-Drive Solar" data-water="100m" data-material="Stainless Steel"
+                data-price="$450" data-desc="Powered by any light — never needs a battery. Clean, classic and reliable.">View Details</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6 filter-card" data-category="classic mens">
+          <div class="card-lux">
+            <div class="card-img-wrap"><img src="images/watch-bulova.jpg" class="img-fluid" alt="Bulova Surveyor"></div>
+            <div class="p-3 text-center">
+              <h6 class="serif mb-1">Bulova Surveyor</h6>
+              <small class="text-muted-light">Bulova · Classic</small>
+              <div class="price-tag my-2">$550</div>
+              <button class="btn btn-gold btn-sm w-100 view-details-btn" data-bs-toggle="modal" data-bs-target="#productModal"
+                data-img="images/watch-bulova.jpg" data-name="Bulova Surveyor" data-brand="Bulova" data-cat="Classic"
+                data-movement="Automatic" data-water="50m" data-material="Stainless Steel"
+                data-price="$550" data-desc="Refined automatic dress watch with a beautiful ice-blue dial.">View Details</button>
+            </div>
+          </div>
+        </div>
+  </div>
+</section>
+
+<!-- ================= TECHNOLOGY STRIP ================= -->
+<section class="py-5 fade-section" style="background:linear-gradient(rgba(11,14,19,.9),rgba(11,14,19,.9)),url('images/tech-movement.jpg') center/cover">
+  <div class="container text-center py-4">
+    <h2 class="section-title text-gold">Explore Our Technology</h2>
+    <p class="section-sub">Precision &bull; Innovation &bull; Reliability</p>
+    <a href="#technology" class="btn btn-gold mt-3">Learn More</a>
+  </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section class="container py-5 fade-section">
+  <div class="row g-4">
+    <div class="col-md-3 col-sm-6"><div class="feature-box"><i class="bi bi-tools d-block mb-3"></i><h6>Watch Repair</h6><small class="text-muted-light">Professional repair services</small></div></div>
+    <div class="col-md-3 col-sm-6"><div class="feature-box"><i class="bi bi-clipboard-check d-block mb-3"></i><h6>Appraisal</h6><small class="text-muted-light">Accurate valuation</small></div></div>
+    <div class="col-md-3 col-sm-6"><div class="feature-box"><i class="bi bi-gear d-block mb-3"></i><h6>Maintenance</h6><small class="text-muted-light">Keep your watch perfect</small></div></div>
+    <div class="col-md-3 col-sm-6"><div class="feature-box"><i class="bi bi-shield-check d-block mb-3"></i><h6>Warranty</h6><small class="text-muted-light">Authentic &amp; trusted</small></div></div>
+  </div>
+</section>
+
+<!-- ================= TRUSTED BRANDS ================= -->
+<section class="container pb-5 text-center fade-section">
+  <h2 class="section-title mb-4">Our Trusted Brands</h2>
+  <div class="row g-4 align-items-center">
+    <div class="col-6 col-md-2 offset-md-1"><span class="brand-name">ROLEX</span></div>
+    <div class="col-6 col-md-2"><span class="brand-name">MICHAEL KORS</span></div>
+    <div class="col-6 col-md-2"><span class="brand-name">CITIZEN</span></div>
+    <div class="col-6 col-md-2"><span class="brand-name">BULOVA</span></div>
+    <div class="col-6 col-md-2"><span class="brand-name">SEIKO</span></div>
+  </div>
+</section>
+
+<!-- ================= PRODUCTS ================= -->
+<section id="products" class="pt-4">
+  <div class="page-banner" style="background-image:url('images/hero-1.jpg')">
+    <div class="inner p-4">
+      <h1 class="section-title text-gold">Our Watch Collection</h1>
+      <p class="section-sub">Find Your Perfect Timepiece</p>
+    </div>
+  </div>
+  <div class="container py-5 fade-section">
+    <div class="text-center mb-4">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="vintage">Vintage</button>
+      <button class="filter-btn" data-filter="luxury">Luxury</button>
+      <button class="filter-btn" data-filter="smart">Smart</button>
+      <button class="filter-btn" data-filter="classic">Classic</button>
+      <button class="filter-btn" data-filter="mens">Men's</button>
+      <button class="filter-btn" data-filter="womens">Women's</button>
+    </div>
+    <div class="row g-4">
+    
+        <div class="col-xl-3 col-lg-4 col-md-6 filter-card" data-category="luxury mens">
+          <div class="card-lux">
+            <div class="card-img-wrap"><img src="images/watch-rolex.jpg" class="img-fluid" alt="Rolex Submariner"></div>
+            <div class="p-3 text-center">
+              <h6 class="serif mb-1">Rolex Submariner</h6>
+              <small class="text-muted-light">Rolex · Luxury</small>
+              <div class="price-tag my-2">$8,500</div>
+              <button class="btn btn-gold btn-sm w-100 view-details-btn" data-bs-toggle="modal" data-bs-target="#productModal"
+                data-img="images/watch-rolex.jpg" data-name="Rolex Submariner" data-brand="Rolex" data-cat="Luxury"
+                data-movement="Automatic" data-water="300m" data-material="Stainless Steel / Gold"
+                data-price="$8,500" data-desc="The Rolex Submariner is an iconic timepiece known for its precision, durability and timeless design.">View Details</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6 filter-card" data-category="luxury womens">
+          <div class="card-lux">
+            <div class="card-img-wrap"><img src="images/watch-michael-kors.jpg" class="img-fluid" alt="Michael Kors Parker"></div>
+            <div class="p-3 text-center">
+              <h6 class="serif mb-1">Michael Kors Parker</h6>
+              <small class="text-muted-light">Michael Kors · Fashion / Luxury</small>
+              <div class="price-tag my-2">$350</div>
+              <button class="btn btn-gold btn-sm w-100 view-details-btn" data-bs-toggle="modal" data-bs-target="#productModal"
+                data-img="images/watch-michael-kors.jpg" data-name="Michael Kors Parker" data-brand="Michael Kors" data-cat="Fashion / Luxury"
+                data-movement="Quartz" data-water="50m" data-material="Gold-Tone Stainless Steel"
+                data-price="$350" data-desc="A glamorous gold-tone chronograph that brings runway style to your wrist.">View Details</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6 filter-card" data-category="classic mens womens">
+          <div class="card-lux">
+            <div class="card-img-wrap"><img src="images/watch-citizen.jpg" class="img-fluid" alt="Citizen Eco-Drive"></div>
+            <div class="p-3 text-center">
+              <h6 class="serif mb-1">Citizen Eco-Drive</h6>
+              <small class="text-muted-light">Citizen · Classic</small>
+              <div class="price-tag my-2">$450</div>
+              <button class="btn btn-gold btn-sm w-100 view-details-btn" data-bs-toggle="modal" data-bs-target="#productModal"
+                data-img="images/watch-citizen.jpg" data-name="Citizen Eco-Drive" data-brand="Citizen" data-cat="Classic"
+                data-movement="Eco-Drive Solar" data-water="100m" data-material="Stainless Steel"
+                data-price="$450" data-desc="Powered by any light — never needs a battery. Clean, classic and reliable.">View Details</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6 filter-card" data-category="classic mens">
+          <div class="card-lux">
+            <div class="card-img-wrap"><img src="images/watch-bulova.jpg" class="img-fluid" alt="Bulova Surveyor"></div>
+            <div class="p-3 text-center">
+              <h6 class="serif mb-1">Bulova Surveyor</h6>
+              <small class="text-muted-light">Bulova · Classic</small>
+              <div class="price-tag my-2">$550</div>
+              <button class="btn btn-gold btn-sm w-100 view-details-btn" data-bs-toggle="modal" data-bs-target="#productModal"
+                data-img="images/watch-bulova.jpg" data-name="Bulova Surveyor" data-brand="Bulova" data-cat="Classic"
+                data-movement="Automatic" data-water="50m" data-material="Stainless Steel"
+                data-price="$550" data-desc="Refined automatic dress watch with a beautiful ice-blue dial.">View Details</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6 filter-card" data-category="classic mens">
+          <div class="card-lux">
+            <div class="card-img-wrap"><img src="images/watch-bulova-2.jpg" class="img-fluid" alt="Bulova Classic Automatic"></div>
+            <div class="p-3 text-center">
+              <h6 class="serif mb-1">Bulova Classic Automatic</h6>
+              <small class="text-muted-light">Bulova · Classic</small>
+              <div class="price-tag my-2">$520</div>
+              <button class="btn btn-gold btn-sm w-100 view-details-btn" data-bs-toggle="modal" data-bs-target="#productModal"
+                data-img="images/watch-bulova-2.jpg" data-name="Bulova Classic Automatic" data-brand="Bulova" data-cat="Classic"
+                data-movement="Automatic" data-water="30m" data-material="Stainless Steel"
+                data-price="$520" data-desc="Traditional analog elegance with a deep blue dial for formal occasions.">View Details</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6 filter-card" data-category="smart mens womens">
+          <div class="card-lux">
+            <div class="card-img-wrap"><img src="images/watch-garmin.jpg" class="img-fluid" alt="Garmin Forerunner 165"></div>
+            <div class="p-3 text-center">
+              <h6 class="serif mb-1">Garmin Forerunner 165</h6>
+              <small class="text-muted-light">Garmin · Smart</small>
+              <div class="price-tag my-2">$299</div>
+              <button class="btn btn-gold btn-sm w-100 view-details-btn" data-bs-toggle="modal" data-bs-target="#productModal"
+                data-img="images/watch-garmin.jpg" data-name="Garmin Forerunner 165" data-brand="Garmin" data-cat="Smart"
+                data-movement="Digital GPS" data-water="50m" data-material="Fiber-Reinforced Polymer"
+                data-price="$299" data-desc="GPS smartwatch with health monitoring, AMOLED display and 11-day battery.">View Details</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6 filter-card" data-category="classic mens">
+          <div class="card-lux">
+            <div class="card-img-wrap"><img src="images/watch-seiko.jpg" class="img-fluid" alt="Seiko 5 Sports"></div>
+            <div class="p-3 text-center">
+              <h6 class="serif mb-1">Seiko 5 Sports</h6>
+              <small class="text-muted-light">Seiko · Classic</small>
+              <div class="price-tag my-2">$420</div>
+              <button class="btn btn-gold btn-sm w-100 view-details-btn" data-bs-toggle="modal" data-bs-target="#productModal"
+                data-img="images/watch-seiko.jpg" data-name="Seiko 5 Sports" data-brand="Seiko" data-cat="Classic"
+                data-movement="Automatic" data-water="100m" data-material="Stainless Steel"
+                data-price="$420" data-desc="Legendary Japanese automatic diver — robust, accurate and iconic.">View Details</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6 filter-card" data-category="luxury mens">
+          <div class="card-lux">
+            <div class="card-img-wrap"><img src="images/watch-rado.jpg" class="img-fluid" alt="Rado D-Star Chronograph"></div>
+            <div class="p-3 text-center">
+              <h6 class="serif mb-1">Rado D-Star Chronograph</h6>
+              <small class="text-muted-light">Rado · Luxury</small>
+              <div class="price-tag my-2">$1,950</div>
+              <button class="btn btn-gold btn-sm w-100 view-details-btn" data-bs-toggle="modal" data-bs-target="#productModal"
+                data-img="images/watch-rado.jpg" data-name="Rado D-Star Chronograph" data-brand="Rado" data-cat="Luxury"
+                data-movement="Automatic" data-water="200m" data-material="Ceramic / PVD Gold"
+                data-price="$1,950" data-desc="Swiss automatic chronograph in black ceramic with gold accents.">View Details</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6 filter-card" data-category="vintage">
+          <div class="card-lux">
+            <div class="card-img-wrap"><img src="images/watch-vintage.jpg" class="img-fluid" alt="Waltham Pocket Watch"></div>
+            <div class="p-3 text-center">
+              <h6 class="serif mb-1">Waltham Pocket Watch</h6>
+              <small class="text-muted-light">Waltham · Vintage</small>
+              <div class="price-tag my-2">$1,200</div>
+              <button class="btn btn-gold btn-sm w-100 view-details-btn" data-bs-toggle="modal" data-bs-target="#productModal"
+                data-img="images/watch-vintage.jpg" data-name="Waltham Pocket Watch" data-brand="Waltham" data-cat="Vintage"
+                data-movement="Mechanical" data-water="N/A" data-material="Brass / Leather Case"
+                data-price="$1,200" data-desc="A beautiful vintage-style mechanical pocket watch with leather case and chain.">View Details</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6 filter-card" data-category="classic womens">
+          <div class="card-lux">
+            <div class="card-img-wrap"><img src="images/watch-citizen-2.jpg" class="img-fluid" alt="Citizen Ladies Eco-Drive"></div>
+            <div class="p-3 text-center">
+              <h6 class="serif mb-1">Citizen Ladies Eco-Drive</h6>
+              <small class="text-muted-light">Citizen · Classic</small>
+              <div class="price-tag my-2">$390</div>
+              <button class="btn btn-gold btn-sm w-100 view-details-btn" data-bs-toggle="modal" data-bs-target="#productModal"
+                data-img="images/watch-citizen-2.jpg" data-name="Citizen Ladies Eco-Drive" data-brand="Citizen" data-cat="Classic"
+                data-movement="Eco-Drive Solar" data-water="50m" data-material="Stainless Steel"
+                data-price="$390" data-desc="Elegant ladies timepiece powered by light, with a polished silver finish.">View Details</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6 filter-card" data-category="smart mens">
+          <div class="card-lux">
+            <div class="card-img-wrap"><img src="images/watch-garmin-2.jpg" class="img-fluid" alt="Garmin Forerunner 70"></div>
+            <div class="p-3 text-center">
+              <h6 class="serif mb-1">Garmin Forerunner 70</h6>
+              <small class="text-muted-light">Garmin · Smart</small>
+              <div class="price-tag my-2">$249</div>
+              <button class="btn btn-gold btn-sm w-100 view-details-btn" data-bs-toggle="modal" data-bs-target="#productModal"
+                data-img="images/watch-garmin-2.jpg" data-name="Garmin Forerunner 70" data-brand="Garmin" data-cat="Smart"
+                data-movement="Digital GPS" data-water="50m" data-material="Silicone / Polymer"
+                data-price="$249" data-desc="Lightweight sports smartwatch with strength, HIIT and run tracking modes.">View Details</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6 filter-card" data-category="luxury mens">
+          <div class="card-lux">
+            <div class="card-img-wrap"><img src="images/watch-rolex-2.jpg" class="img-fluid" alt="Rolex Submariner Gold"></div>
+            <div class="p-3 text-center">
+              <h6 class="serif mb-1">Rolex Submariner Gold</h6>
+              <small class="text-muted-light">Rolex · Luxury</small>
+              <div class="price-tag my-2">$9,200</div>
+              <button class="btn btn-gold btn-sm w-100 view-details-btn" data-bs-toggle="modal" data-bs-target="#productModal"
+                data-img="images/watch-rolex-2.jpg" data-name="Rolex Submariner Gold" data-brand="Rolex" data-cat="Luxury"
+                data-movement="Automatic" data-water="300m" data-material="18k Gold"
+                data-price="$9,200" data-desc="Full gold Submariner with green dial — the ultimate statement of luxury.">View Details</button>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TECHNOLOGY ================= -->
+<section id="technology" class="pt-4">
+  <div class="page-banner" style="background-image:url('images/hero-2.jpg')">
+    <div class="inner p-4">
+      <h1 class="section-title text-gold">Watch Technology</h1>
+      <p class="section-sub">Innovation Meets Precision</p>
+    </div>
+  </div>
+  <div class="container py-5 fade-section">
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="card-lux">
+          <div class="card-img-wrap"><img src="images/tech-movement.jpg" class="img-fluid w-100" style="max-height:250px;object-fit:cover" alt="Automatic Movement"></div>
+          <div class="p-4">
+            <h5 class="text-gold serif">Automatic Movement</h5>
+            <p class="text-muted-light mt-2">Traditional mechanical watches powered by natural wrist motion — no battery ever needed. A masterpiece of micro-engineering with 100+ tiny components working in harmony.</p>
+            <a href="#support" class="btn btn-gold btn-sm">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card-lux">
+          <div class="card-img-wrap"><img src="images/tech-detail.jpg" class="img-fluid w-100" style="max-height:250px;object-fit:cover" alt="Quartz Technology"></div>
+          <div class="p-4">
+            <h5 class="text-gold serif">Quartz Technology</h5>
+            <p class="text-muted-light mt-2">High accuracy battery-powered movement. Quartz crystals vibrate 32,768 times per second, delivering precision you can rely on every single day.</p>
+            <a href="#support" class="btn btn-gold btn-sm">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card-lux">
+          <div class="card-img-wrap"><img src="images/watch-citizen.jpg" class="img-fluid w-100" style="max-height:250px;object-fit:cover" alt="Eco-Drive Technology"></div>
+          <div class="p-4">
+            <h5 class="text-gold serif">Eco-Drive Technology</h5>
+            <p class="text-muted-light mt-2">Revolutionary light-powered technology by Citizen. Any light — natural or artificial — keeps your watch running forever. Good for the planet, perfect for you.</p>
+            <a href="#support" class="btn btn-gold btn-sm">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card-lux">
+          <div class="card-img-wrap"><img src="images/tech-smart.jpg" class="img-fluid w-100" style="max-height:250px;object-fit:cover" alt="Smart Watch Technology"></div>
+          <div class="p-4">
+            <h5 class="text-gold serif">Smart Watch Technology</h5>
+            <p class="text-muted-light mt-2">Advanced features for a smarter lifestyle: GPS, heart-rate monitoring, sleep tracking, notifications and multi-day battery life in a sleek design.</p>
+            <a href="#support" class="btn btn-gold btn-sm">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= STORE LOCATOR ================= -->
+<section id="locator" class="pt-4">
+  <div class="page-banner" style="background-image:url('images/hero-1.jpg')">
+    <div class="inner p-4">
+      <h1 class="section-title text-gold">Store Locator</h1>
+      <p class="section-sub">Find Our Boutique Near You</p>
+    </div>
+  </div>
+  <div class="container py-5 fade-section">
+    <div class="row g-5">
+      <div class="col-lg-5">
+        <div class="bg-panel p-4 h-100">
+          <h5 class="text-gold serif">Alberto Watch Company — Flagship Store</h5>
+          <hr style="border-color:rgba(201,162,39,.25)">
+          <p><i class="bi bi-geo-alt text-gold me-2"></i> 123 Luxury Street, Clifton, Karachi, Pakistan</p>
+          <p><i class="bi bi-telephone text-gold me-2"></i> +92 300 1234567</p>
+          <p><i class="bi bi-envelope text-gold me-2"></i> <a href="mailto:info@albertowatch.com" class="text-decoration-none text-gold">info@albertowatch.com</a></p>
+          <p><i class="bi bi-clock text-gold me-2"></i> Mon – Sat: 10:00 AM – 8:00 PM</p>
+          <p><i class="bi bi-clock-history text-gold me-2"></i> Sunday: Closed</p>
+          <a href="#contact" class="btn btn-gold mt-2">View Location / Contact</a>
+        </div>
+      </div>
+      <div class="col-lg-7">
+        <iframe src="https://maps.google.com/maps?q=Clifton%20Karachi%20Pakistan&t=&z=14&ie=UTF8&iwloc=&output=embed" class="w-100 rounded" style="height:420px;border:1px solid rgba(201,162,39,.25)" loading="lazy"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SUPPORT ================= -->
+<section id="support" class="pt-4">
+  <div class="page-banner" style="background-image:url('images/hero-3.jpg')">
+    <div class="inner p-4">
+      <h1 class="section-title text-gold">Customer Support</h1>
+      <p class="section-sub">We're Here to Help</p>
+    </div>
+  </div>
+  <div class="container py-5 fade-section">
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="feature-box text-start">
+          <i class="bi-tools d-block mb-3"></i>
+          <h5 class="serif">Watch Repair</h5>
+          <p class="text-muted-light mt-2">Expert repair services for all major brands. Movement servicing, glass replacement and full restoration by certified technicians.</p>
+          <a href="#contact" class="btn btn-gold btn-sm">Learn More</a>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="feature-box text-start">
+          <i class="bi-clipboard-check d-block mb-3"></i>
+          <h5 class="serif">Watch Appraisal</h5>
+          <p class="text-muted-light mt-2">Professional valuation services for insurance, resale or curiosity. Get a certified, accurate appraisal from our experts.</p>
+          <a href="#contact" class="btn btn-gold btn-sm">Learn More</a>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="feature-box text-start">
+          <i class="bi-gear d-block mb-3"></i>
+          <h5 class="serif">Maintenance</h5>
+          <p class="text-muted-light mt-2">Keep your watch in perfect condition with regular cleaning, lubrication, water-resistance testing and timing regulation.</p>
+          <a href="#contact" class="btn btn-gold btn-sm">Learn More</a>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="feature-box text-start">
+          <i class="bi-headset d-block mb-3"></i>
+          <h5 class="serif">Customer Support</h5>
+          <p class="text-muted-light mt-2">Our friendly support team is ready to help you with any question — before or after your purchase.</p>
+          <a href="#contact" class="btn btn-gold btn-sm">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container pb-5 fade-section">
+    <div class="bg-panel p-5 text-center" style="background:linear-gradient(rgba(17,21,29,.95),rgba(17,21,29,.95)),url('images/tech-movement.jpg') center/cover">
+      <h3 class="text-gold serif">Need Assistance?</h3>
+      <p class="text-muted-light mt-2">Our team is ready to help you with any question about our timepieces.</p>
+      <a href="#contact" class="btn btn-gold mt-2">Contact Support</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= GALLERY ================= -->
+<section id="gallery" class="pt-4">
+  <div class="page-banner" style="background-image:url('images/hero-1.jpg')">
+    <div class="inner p-4">
+      <h1 class="section-title text-gold">Watch Gallery</h1>
+      <p class="section-sub">A Glimpse of Timeless Elegance</p>
+    </div>
+  </div>
+  <div class="container py-5 fade-section">
+    <div class="text-center mb-4">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="luxury">Luxury</button>
+      <button class="filter-btn" data-filter="vintage">Vintage</button>
+      <button class="filter-btn" data-filter="smart">Smart</button>
+      <button class="filter-btn" data-filter="classic">Classic</button>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6 filter-card" data-category="luxury">
+        <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="images/gallery-gold.jpg" data-cap="Luxury Gold Chronograph">
+          <img src="images/gallery-gold.jpg" alt="Luxury Gold Chronograph">
+          <div class="p-2 text-center small text-muted-light">Luxury Gold Chronograph</div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 filter-card" data-category="classic">
+        <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="images/tech-movement.jpg" data-cap="Automatic Movement Macro">
+          <img src="images/tech-movement.jpg" alt="Automatic Movement Macro">
+          <div class="p-2 text-center small text-muted-light">Automatic Movement Macro</div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 filter-card" data-category="smart">
+        <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="images/gallery-smart.jpg" data-cap="Modern Smartwatch">
+          <img src="images/gallery-smart.jpg" alt="Modern Smartwatch">
+          <div class="p-2 text-center small text-muted-light">Modern Smartwatch</div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 filter-card" data-category="classic">
+        <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="images/watch-bulova-2.jpg" data-cap="Bulova Blue Dial">
+          <img src="images/watch-bulova-2.jpg" alt="Bulova Blue Dial">
+          <div class="p-2 text-center small text-muted-light">Bulova Blue Dial</div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 filter-card" data-category="luxury">
+        <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="images/watch-rolex.jpg" data-cap="Rolex Submariner">
+          <img src="images/watch-rolex.jpg" alt="Rolex Submariner">
+          <div class="p-2 text-center small text-muted-light">Rolex Submariner</div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 filter-card" data-category="vintage">
+        <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="images/watch-vintage.jpg" data-cap="Vintage Pocket Watch">
+          <img src="images/watch-vintage.jpg" alt="Vintage Pocket Watch">
+          <div class="p-2 text-center small text-muted-light">Vintage Pocket Watch</div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 filter-card" data-category="smart">
+        <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="images/tech-smart.jpg" data-cap="Smart Wearable Tech">
+          <img src="images/tech-smart.jpg" alt="Smart Wearable Tech">
+          <div class="p-2 text-center small text-muted-light">Smart Wearable Tech</div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 filter-card" data-category="classic">
+        <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="images/watch-seiko.jpg" data-cap="Seiko 5 Sports Diver">
+          <img src="images/watch-seiko.jpg" alt="Seiko 5 Sports Diver">
+          <div class="p-2 text-center small text-muted-light">Seiko 5 Sports Diver</div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 filter-card" data-category="luxury">
+        <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="images/hero-3.jpg" data-cap="Gold Watch Close-Up">
+          <img src="images/hero-3.jpg" alt="Gold Watch Close-Up">
+          <div class="p-2 text-center small text-muted-light">Gold Watch Close-Up</div>
+        </div>
+      </div>
+    </div>
+    <p class="text-center text-muted-light mt-3 small"><i class="bi bi-zoom-in text-gold me-1"></i>Click any image to preview it in the lightbox</p>
+  </div>
+</section>
+
+<!-- ================= ABOUT US ================= -->
+<section id="about" class="pt-4">
+  <div class="page-banner" style="background-image:url('images/hero-1.jpg')">
+    <div class="inner p-4">
+      <h1 class="section-title text-gold">About Alberto Watch Company</h1>
+      <p class="section-sub">A Legacy of Trust & Excellence</p>
+    </div>
+  </div>
+  <div class="container py-5 fade-section">
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-6">
+        <img src="images/hero-3.jpg" class="img-fluid rounded" alt="Our Boutique">
+      </div>
+      <div class="col-lg-6">
+        <h2 class="section-title text-gold">Our Story</h2>
+        <div class="divider-gold" style="margin-left:0"></div>
+        <p class="text-muted-light">Alberto Watch Company is a full-service watch repair, appraisal and retail store, offering the finest selection of luxury timepieces. With years of experience and a passion for precision, we bring you watch collections that define elegance and excellence.</p>
+        <p class="text-muted-light">From iconic Swiss brands to cutting-edge smart wearables, every timepiece in our collection is authenticated, serviced and backed by our trusted warranty.</p>
+      </div>
+    </div>
+    <div class="row g-4 mt-4">
+      <div class="col-md-4"><div class="feature-box"><i class="bi bi-bullseye d-block mb-3"></i><h5>Our Mission</h5><small class="text-muted-light">To provide quality watches and first-class service to every customer.</small></div></div>
+      <div class="col-md-4"><div class="feature-box"><i class="bi bi-eye d-block mb-3"></i><h5>Our Vision</h5><small class="text-muted-light">To become the most trusted destination for luxury watches in Pakistan.</small></div></div>
+      <div class="col-md-4"><div class="feature-box"><i class="bi bi-award d-block mb-3"></i><h5>Our Values</h5><small class="text-muted-light">Authenticity &bull; Quality &bull; Customer Satisfaction.</small></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT US ================= -->
+<section id="contact" class="pt-4">
+  <div class="page-banner" style="background-image:url('images/hero-3.jpg')">
+    <div class="inner p-4">
+      <h1 class="section-title text-gold">Get in Touch</h1>
+      <p class="section-sub">We're Always Here for You</p>
+    </div>
+  </div>
+  <div class="container py-5 fade-section">
+    <div class="row g-5">
+      <div class="col-lg-5">
+        <div class="bg-panel p-4 h-100">
+          <h5 class="text-gold serif mb-4">Alberto Watch Company</h5>
+          <p><i class="bi bi-geo-alt text-gold me-2"></i> 123 Luxury Street, Karachi, Pakistan</p>
+          <p><i class="bi bi-telephone text-gold me-2"></i> +92 300 1234567</p>
+          <p><i class="bi bi-envelope text-gold me-2"></i> <a href="mailto:info@albertowatch.com" class="text-decoration-none text-gold">info@albertowatch.com</a></p>
+          <p><i class="bi bi-clock text-gold me-2"></i> Mon – Sat: 10:00 AM – 8:00 PM</p>
+          <hr style="border-color:rgba(201,162,39,.25)">
+          <iframe src="https://maps.google.com/maps?q=Karachi%20Pakistan&t=&z=12&ie=UTF8&iwloc=&output=embed" class="w-100 rounded" style="height:220px;border:0" loading="lazy"></iframe>
+        </div>
+      </div>
+      <div class="col-lg-7">
+        <div class="bg-panel p-4">
+          <h5 class="text-gold serif mb-4">Send Us a Message</h5>
+          <div id="formSuccess" class="alert" style="display:none;background:rgba(60,160,90,.15);border:1px solid rgba(60,160,90,.5);color:#7fd69a">
+            Thank you! Your message has been sent successfully.
+          </div>
+          <form id="contactForm" novalidate>
+            <div class="mb-3">
+              <label class="form-label">Your Name</label>
+              <input type="text" id="cName" class="form-control-lux" placeholder="Enter your full name">
+              <small class="error-msg" id="errName"></small>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Your Email</label>
+              <input type="email" id="cEmail" class="form-control-lux" placeholder="Enter your email address">
+              <small class="error-msg" id="errEmail"></small>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Subject</label>
+              <select id="cSubject" class="form-control-lux">
+                <option value="">-- Select a subject --</option>
+                <option value="repair">Watch Repair</option>
+                <option value="appraisal">Watch Appraisal</option>
+                <option value="order">Order Inquiry</option>
+                <option value="feedback">Feedback</option>
+                <option value="other">Other</option>
+              </select>
+              <small class="error-msg" id="errSubject"></small>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Your Message</label>
+              <textarea id="cMessage" rows="5" class="form-control-lux" placeholder="Write your message here..."></textarea>
+              <small class="error-msg" id="errMessage"></small>
+            </div>
+            <button type="submit" class="btn btn-gold w-100">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SITE MAP ================= -->
+<section id="sitemap" class="pt-4">
+  <div class="page-banner" style="background-image:url('images/hero-2.jpg')">
+    <div class="inner p-4">
+      <h1 class="section-title text-gold">Site Map</h1>
+      <p class="section-sub">Quick Access to All Sections</p>
+    </div>
+  </div>
+  <div class="container py-5 fade-section">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="bg-panel p-4 p-md-5">
+          <div class="row">
+            <div class="col-md-6">
+        <ul class="list-unstyled">
+          <li class="mb-2"><i class="bi bi-house text-gold me-2"></i><a href="#home" class="text-decoration-none" style="color:var(--text)">Home</a></li>
+          <li class="mb-2"><i class="bi bi-grid text-gold me-2"></i><a href="#products" class="text-decoration-none" style="color:var(--text)">Products</a>
+            <ul class="list-unstyled ms-4 mt-1">
+              <li><i class="bi bi-dash text-gold me-1"></i><a href="#products" class="text-decoration-none dropdown-filter" data-filter="vintage" style="color:var(--muted)">Vintage</a></li>
+              <li><i class="bi bi-dash text-gold me-1"></i><a href="#products" class="text-decoration-none dropdown-filter" data-filter="luxury" style="color:var(--muted)">Luxury</a></li>
+              <li><i class="bi bi-dash text-gold me-1"></i><a href="#products" class="text-decoration-none dropdown-filter" data-filter="smart" style="color:var(--muted)">Smart Watches</a></li>
+              <li><i class="bi bi-dash text-gold me-1"></i><a href="#products" class="text-decoration-none dropdown-filter" data-filter="classic" style="color:var(--muted)">Classic</a></li>
+            </ul>
+          </li>
+          <li class="mb-2"><i class="bi bi-cpu text-gold me-2"></i><a href="#technology" class="text-decoration-none" style="color:var(--text)">Technology</a></li>
+          <li class="mb-2"><i class="bi bi-geo-alt text-gold me-2"></i><a href="#locator" class="text-decoration-none" style="color:var(--text)">Store Locator</a></li>
+          <li class="mb-2"><i class="bi bi-headset text-gold me-2"></i><a href="#support" class="text-decoration-none" style="color:var(--text)">Support</a>
+            <ul class="list-unstyled ms-4 mt-1">
+              <li><i class="bi bi-dash text-gold me-1"></i><a href="#support" class="text-decoration-none" style="color:var(--muted)">Repair</a></li>
+              <li><i class="bi bi-dash text-gold me-1"></i><a href="#support" class="text-decoration-none" style="color:var(--muted)">Appraisal</a></li>
+              <li><i class="bi bi-dash text-gold me-1"></i><a href="#support" class="text-decoration-none" style="color:var(--muted)">Maintenance</a></li>
+            </ul>
+          </li>
+        </ul>
+            </div>
+            <div class="col-md-6">
+        <ul class="list-unstyled">
+          <li class="mb-2"><i class="bi bi-images text-gold me-2"></i><a href="#gallery" class="text-decoration-none" style="color:var(--text)">Gallery</a></li>
+          <li class="mb-2"><i class="bi bi-info-circle text-gold me-2"></i><a href="#about" class="text-decoration-none" style="color:var(--text)">About Us</a></li>
+          <li class="mb-2"><i class="bi bi-envelope text-gold me-2"></i><a href="#contact" class="text-decoration-none" style="color:var(--text)">Contact Us</a></li>
+          <li class="mb-2"><i class="bi bi-diagram-3 text-gold me-2"></i><a href="#sitemap" class="text-decoration-none" style="color:var(--text)">Site Map</a></li>
+          <li class="mb-2"><i class="bi bi-tags text-gold me-2"></i><a href="#pricelist" class="text-decoration-none" style="color:var(--text)">Price List</a></li>
+        </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PRICE LIST ================= -->
+<section id="pricelist" class="pt-4">
+  <div class="page-banner" style="background-image:url('images/hero-1.jpg')">
+    <div class="inner p-4">
+      <h1 class="section-title text-gold">Watch Price List</h1>
+      <p class="section-sub">Find Your Ideal Timepiece</p>
+    </div>
+  </div>
+  <div class="container py-5 fade-section">
+    <div class="row justify-content-center">
+      <div class="col-lg-9">
+        <div class="bg-panel p-4 p-md-5">
+          <div class="table-responsive">
+            <table class="table table-lux align-middle mb-0">
+              <thead><tr><th>Watch</th><th>Brand</th><th>Category</th><th>Price</th></tr></thead>
+              <tbody>
+            <tr><td>Submariner</td><td>Rolex</td><td>Luxury</td><td class="text-gold fw-semibold">$8,500</td></tr>
+            <tr><td>Submariner Gold</td><td>Rolex</td><td>Luxury</td><td class="text-gold fw-semibold">$9,200</td></tr>
+            <tr><td>D-Star Chronograph</td><td>Rado</td><td>Luxury</td><td class="text-gold fw-semibold">$1,950</td></tr>
+            <tr><td>Parker</td><td>Michael Kors</td><td>Fashion / Luxury</td><td class="text-gold fw-semibold">$350</td></tr>
+            <tr><td>Lexington</td><td>Michael Kors</td><td>Fashion</td><td class="text-gold fw-semibold">$300</td></tr>
+            <tr><td>Eco-Drive</td><td>Citizen</td><td>Classic</td><td class="text-gold fw-semibold">$450</td></tr>
+            <tr><td>Ladies Eco-Drive</td><td>Citizen</td><td>Classic</td><td class="text-gold fw-semibold">$390</td></tr>
+            <tr><td>Surveyor</td><td>Bulova</td><td>Classic</td><td class="text-gold fw-semibold">$550</td></tr>
+            <tr><td>Classic Automatic</td><td>Bulova</td><td>Classic</td><td class="text-gold fw-semibold">$520</td></tr>
+            <tr><td>Classic Chronograph</td><td>Bulova</td><td>Classic</td><td class="text-gold fw-semibold">$550</td></tr>
+            <tr><td>Seiko 5 Sports</td><td>Seiko</td><td>Classic</td><td class="text-gold fw-semibold">$420</td></tr>
+            <tr><td>Forerunner 165</td><td>Garmin</td><td>Smart</td><td class="text-gold fw-semibold">$299</td></tr>
+            <tr><td>Forerunner 70</td><td>Garmin</td><td>Smart</td><td class="text-gold fw-semibold">$249</td></tr>
+            <tr><td>Pocket Watch</td><td>Waltham</td><td>Vintage</td><td class="text-gold fw-semibold">$1,200</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="text-center mt-4">
+            <button class="btn btn-gold" onclick="printPriceList()"><i class="bi bi-printer me-2"></i>Download / Print Price List</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PRODUCT DETAILS MODAL ================= -->
+<div class="modal fade" id="productModal" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content modal-content-lux">
+      <div class="modal-header">
+        <h5 class="modal-title text-gold serif" id="modalName">Watch Name</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row g-4">
+          <div class="col-md-5 text-center">
+            <img id="modalImg" src="" class="img-fluid rounded" alt="watch">
+          </div>
+          <div class="col-md-7">
+            <small class="text-muted-light" id="modalCat"></small>
+            <p class="mt-2" id="modalDesc"></p>
+            <div class="spec-row"><span>Brand</span><span id="modalBrand"></span></div>
+            <div class="spec-row"><span>Category</span><span id="modalCategory"></span></div>
+            <div class="spec-row"><span>Movement</span><span id="modalMovement"></span></div>
+            <div class="spec-row"><span>Water Resistance</span><span id="modalWater"></span></div>
+            <div class="spec-row"><span>Material</span><span id="modalMaterial"></span></div>
+            <div class="spec-row"><span>Price</span><span class="text-gold fw-bold" id="modalPrice"></span></div>
+            <button class="btn btn-gold w-100 mt-3">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= GALLERY LIGHTBOX MODAL ================= -->
+<div class="modal fade" id="lightboxModal" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content modal-content-lux">
+      <div class="modal-header">
+        <h6 class="modal-title text-gold serif" id="lightboxCaption">Preview</h6>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body text-center p-2">
+        <img id="lightboxImg" src="" class="lightbox-img" alt="preview">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer-alberto pt-5">
+  <div class="container">
+    <div class="row g-4 pb-4">
+      <div class="col-lg-4 col-md-6">
+        <h5 class="footer-title"><i class="bi bi-gem me-1"></i> ALBERTO WATCH COMPANY</h5>
+        <p class="text-muted-light mt-3">A legacy of trust and excellence. Discover the world of luxury timepieces — timeless elegance, engineered for excellence.</p>
+        <div class="d-flex gap-3 fs-5">
+          <a href="https://www.facebook.com" target="_blank" title="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.twitter.com" target="_blank" title="Twitter"><i class="bi bi-twitter-x"></i></a>
+          <a href="https://www.instagram.com" target="_blank" title="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.linkedin.com" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-6">
+        <h6 class="footer-title">Quick Links</h6>
+        <ul class="list-unstyled mt-3 d-grid gap-2">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#technology">Technology</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#about">About Us</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <h6 class="footer-title">More</h6>
+        <ul class="list-unstyled mt-3 d-grid gap-2">
+          <li><a href="#locator">Store Locator</a></li>
+          <li><a href="#support">Support</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="#sitemap">Site Map</a></li>
+          <li><a href="#pricelist">Price List</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <h6 class="footer-title">Contact</h6>
+        <ul class="list-unstyled mt-3 d-grid gap-2 text-muted-light">
+          <li><i class="bi bi-geo-alt text-gold me-2"></i> 123 Luxury Street, Karachi, Pakistan</li>
+          <li><i class="bi bi-telephone text-gold me-2"></i> +92 300 1234567</li>
+          <li><i class="bi bi-envelope text-gold me-2"></i> <a href="mailto:info@albertowatch.com">info@albertowatch.com</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom py-3 text-center">
+    <span class="me-3"><i class="bi bi-calendar3 me-1"></i> Date: <span class="tDate"></span></span>
+    <span class="me-3"><i class="bi bi-clock me-1"></i> Time: <span class="tTime"></span></span>
+    <span class="me-3"><i class="bi bi-people-fill me-1"></i> Visitors: <span id="visitorCountFoot">1251</span></span>
+    <div class="mt-2 small">© 2026 Alberto Watch Company. All Rights Reserved.</div>
+  </div>
+</footer>
+
+<!-- ================= SCROLLING TICKER (Date | Time | Location >>>) ================= -->
+<div class="ticker-bar">
+  <div class="ticker-track">
+    <span><i class="bi bi-calendar3 me-1"></i> Date: <span class="tDate"></span> &nbsp;|&nbsp; <i class="bi bi-clock me-1"></i> Time: <span class="tTime"></span> &nbsp;|&nbsp; <i class="bi bi-geo-alt me-1"></i> Location: <span class="tLoc">Karachi, Pakistan</span> &nbsp;&gt;&gt;&gt;&gt;</span>
+    <span><i class="bi bi-calendar3 me-1"></i> Date: <span class="tDate"></span> &nbsp;|&nbsp; <i class="bi bi-clock me-1"></i> Time: <span class="tTime"></span> &nbsp;|&nbsp; <i class="bi bi-geo-alt me-1"></i> Location: <span class="tLoc">Karachi, Pakistan</span> &nbsp;&gt;&gt;&gt;&gt;</span>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
